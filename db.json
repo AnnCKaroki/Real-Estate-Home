@@ -1,0 +1,43 @@
+{
+    "properties" : [
+    {
+      "id": 1,
+      "title": "Home in Metric Way",
+      "address": "1421 San Pedro St, Los Angeles",
+      "price": "$550/month",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "area": "2300 Sq.Ft",
+      "garage": 1,
+      "type": "sale",
+      "image": "property1.jpg",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Affordable Urban House",
+      "address": "1421 San Pedro St, Los Angeles",
+      "price": "$5700/year",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "area": "2300 Sq.Ft",
+      "garage": 1,
+      "type": "sale",
+      "image": "property2.jpg",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Villa on Hollywood Boulevard",
+      "address": "1421 San Pedro St, Los Angeles",
+      "price": "$1,200,000",
+      "bedrooms": 4,
+      "bathrooms": 3.5,
+      "area": "3200 Sq.Ft",
+      "garage": 2,
+      "type": "sale",
+      "image": "property3.jpg",
+      "featured": true
+    }
+]
+}

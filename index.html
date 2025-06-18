@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <ul>
+                <li class="nav-list"><a href="index.html">Home</a></li>
+                <li class="nav-list"><a href="listings.html">Listing</a></li>
+                <li class="nav-list"><a href="property.html">Property</a></li>
+                <li class="nav-list"><a href="#blog">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+          <div class="hero-image">
+          </div>
+           <div class="hero-overlay">
+           <div class="hero-content">
+            <h1>Find Your Dream Home</h1>
+
+            <div class="search-container">
+                <div class="property-type">
+                    <button class="active">FOR SALE</button>
+                    <button>FOR RENT</button>
+                </div>
+
+                <form class="search-form">
+                    <div class="form-group">
+                        <label for="home-type">HOME TYPE</label>
+                        <select id="home-type">
+                            <option>Select</option>
+                            <option>House</option>
+                            <option>Apartment</option>
+                            <option>Condo</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" placeholder="Search by location, property, etc...">
+                        <button type="submit">SEARCH</button>
+                    </div>
+                </form>
+
+
+            </div>
+          </div>
+        </div>
+        </section>
+
+        <section class="featured-properties">
+            <div class="container">
+                <h2>Feautured Properties</h2>
+                <div class="property-grid" id="propertyContainer">
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+<script src="main.js"></script>
+</body>
+</html>

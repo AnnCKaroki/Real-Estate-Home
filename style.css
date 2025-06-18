@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-bar ul {
+  list-style-type: none;
+  background-color: hsl(0 0% 20%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.nav-list {
+  margin: 0 15px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.hero-section {
+  position: relative;
+  min-height: 80vh;
+  width: 100%;
+
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/022/756/698/large_2x/3d-rendering-of-modern-cozy-house-with-garage-for-sale-or-rent-with-beautiful-landscaping-on-background-real-estate-concept-ai-generated-artwork-photo.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100% !important;
+  width: 100% !important;
+  z-index: 1;
+  background-color: #ccc;
+
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom:10px;
+  /* margin-bottom: 60px; */
+}
+
+.search-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.property-type {
+  margin-bottom: 20px;
+}
+
+.property-type button {
+  padding: 10px 20px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+}
+
+.property-type button.active {
+  background: #2c3e50;
+  color: white;
+}
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 200px;
+}
+
+.form-group label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group select,
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-group button[type="submit"] {
+  background-color: #673ce7;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.featured-properties {
+  padding: 60px 0;
+  background: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.container h2 {
+  text-align: center;
+}
+
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.proprty-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.property-card:hover {
+  transform: translateY(-5px);
+}
+
+.property-image {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.property-info {
+  padding: 20px;
+}
+
+.property-info h3 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+}
+
+property-info p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.property-price {
+  font-weight: bold;
+  color: #2c3e50;
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.property-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+}
+
+.feature span {
+  margin-left: 5px;
+}
