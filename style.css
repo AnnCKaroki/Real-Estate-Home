@@ -240,6 +240,7 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   perspective: 1000px; /* For 3D effect */
+  margin-bottom: 80px;
 }
 
 /* Card Animations */
@@ -290,4 +291,56 @@
 .testimonial-card:hover .testimonial-quote::after {
   transform: scale(1.1);
   opacity: 0.3;
+}
+
+.simple-footer {
+  background: #2c3e50;
+  color: white;
+  padding: 40px 20px 20px;
+  font-size: 14px;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 30px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 150px;
+}
+
+.footer-section h3 {
+  color: #ecf0f1;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.footer-section a {
+  display: block;
+  color: #bdc3c7;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.footer-section a:hover {
+  color: #e74c3c;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #34495e;
+  color: #7f8c8d;
+}
+
+@media (max-width: 600px) {
+  .footer-section {
+    flex: 100%;
+    margin-bottom: 20px;
+  }
 }
