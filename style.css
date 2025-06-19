@@ -143,6 +143,7 @@
 
 .container h2 {
   text-align: center;
+  font-size: 30px;
 }
 
 .property-grid {
@@ -179,7 +180,7 @@
   font-size: 1.2rem;
 }
 
-property-info p {
+.property-info p {
   margin: 5px 0;
   color: #666;
 }
@@ -205,4 +206,88 @@ property-info p {
 
 .feature span {
   margin-left: 5px;
+}
+
+.testimonials h2 {
+  text-align: center;
+  padding: 40px;
+  font-size: 30px;
+}
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Testimonial Grid */
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  perspective: 1000px; /* For 3D effect */
+}
+
+/* Card Animations */
+.testimonial-card {
+  animation: fadeInUp 0.6s ease-out forwards;
+  opacity: 0; /* Start invisible */
+  transform-style: preserve-3d;
+  transition: all 0.4s ease;
+}
+
+/* Stagger animations */
+.testimonial-card:nth-child(1) { animation-delay: 0.1s; }
+.testimonial-card:nth-child(2) { animation-delay: 0.3s; }
+.testimonial-card:nth-child(3) { animation-delay: 0.5s; }
+
+/* Hover Effects */
+.testimonial-card:hover {
+  transform: translateY(-5px) rotateY(5deg);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* Avatar Animation */
+.testimonial-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 15px;
+  transition: all 0.4s ease;
+}
+.testimonial-card:hover .testimonial-avatar {
+  animation: float 3s ease-in-out infinite;
+  border-color: #e74c3c;
+}
+
+/* Quote Pulse Effect */
+.testimonial-quote::after {
+  content: "”";
+  font-size: 60px;
+  color: #e74c3c;
+  position: absolute;
+  right: 10px;
+  bottom: -30px;
+  opacity: 0.1;
+  transition: all 0.3s ease;
+}
+.testimonial-card:hover .testimonial-quote::after {
+  transform: scale(1.1);
+  opacity: 0.3;
 }

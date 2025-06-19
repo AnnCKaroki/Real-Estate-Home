@@ -1,5 +1,5 @@
 {
-    "properties" : [
+  "properties": [
     {
       "id": 1,
       "title": "Home in Metric Way",
@@ -39,5 +39,31 @@
       "image": "property3.jpg",
       "featured": true
     }
-]
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "James Smith",
+      "role": "Designer, Co-founder",
+      "avatar": "avatar1.jpg",
+      "quote": "The service was exceptional from start to finish...",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "name": "Jane Doe",
+      "role": "Developer, Tech Inc.",
+      "avatar": "avatar2.jpg",
+      "quote": "Couldn't have asked for a smoother experience.",
+      "rating": 4
+    },
+    {
+      "id": 3,
+      "name": "Alex Johnson",
+      "role": "Investor",
+      "avatar": "avatar3.jpg",
+      "quote": "Top-tier service with unmatched professionalism.",
+      "rating": 5
+    }
+  ]
 }

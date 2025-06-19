@@ -46,3 +46,27 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  fetch('db.json')
+    .then(response => response.json())
+    .then(data => {
+      const container = document.getElementById('testimonialsContainer');
+
+      container.innerHTML = data.testimonials.map((testimonial, index) => `
+        <div class="testimonial-card" style="animation-delay: ${index * 0.2}s">
+          <img src="assets/${testimonial.avatar}"
+               alt="${testimonial.name}"
+               class="testimonial-avatar"
+               onerror="this.src='assets/default-avatar.jpg'">
+          <div class="testimonial-quote">${testimonial.quote}</div>
+          <div class="testimonial-name">${testimonial.name}</div>
+          <div class="testimonial-role">${testimonial.role}</div>
+        </div>
+      `).join('');
+
+      // Trigger reflow to restart animations if needed
+      void container.offsetHeight;
+    })
+    .catch(console.error);
+});
